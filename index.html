@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>website of interest</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/public/style.css" />
+    <!-- <link rel="stylesheet" href="././style2.css" /> -->
+  </head>
+  <body class="font-[Poppins] bg-white">
+    <div class="relative" id="header">
+      <video
+        src="./assets/hololivealt3.mp4"
+        class="absolute top-0 -z-10 h-[100vh] object-cover flex justify-center items-center"
+        autoplay
+        muted
+        loop
+      ></video>
+    </div>
+    <div class="h-screen w-[100%] flex justify-center items-center m-0">
+      <div class="flex-col">
+        <p
+          class="text-white text-center text-[80px] max-[400px]:text-[60px] font-bold drop-shadow-lg font-serif tracking-0"
+        >
+          all about vtubers
+        </p>
+        <p class="text-center text-white font-serif text-[30px]">
+          dive into the rabbithole.
+        </p>
+      </div>
+
+      <a href="#definition" class="absolute bottom-0 right-0">
+        <div class="header-arrow"></div>
+      </a>
+    </div>
+    <header class="bg-transparent z-[999] top-0 static md:sticky w-100">
+      <nav class="flex justify-between items-center w-[92%] mx-auto z-20">
+        <div></div>
+        <div
+          class="nav-links z-[999] mt-[20px] duration-700 md:static absolute bg-white/80 md:bg-white/80 p-3 md:border-4 md:rounded-full md:border-white/100 md:min-h-fit min-h-[40vh] rounded-[10px] md:left-0 md:right-0 min-w-[115px] right-0 top-[-350px] mr-[15px] md:mr-[0px] md:w-auto w-[25vw] py-[20px] md:py-[10px] flex items-center px-5"
+        >
+          <ul
+            class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 text-[13px] min-[520px]:text-[16px]"
+          >
+            <li>
+              <a class="hover:text-gray-500 duration-300" href="#definition"
+                >definition</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-gray-500" href="#timeline">timeline</a>
+            </li>
+            <li>
+              <a class="hover:text-gray-500" href="#process">process</a>
+            </li>
+            <li>
+              <a class="hover:text-gray-500" href="#agencies">agencies</a>
+            </li>
+
+            <li>
+              <a class="hover:text-gray-500" href="#suggestions">suggestions</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex items-center gap-6 mt-[20px]">
+          <ion-icon
+            onclick="onToggleMenu(this)"
+            name="menu"
+            class="text-3xl cursor-pointer md:hidden"
+          ></ion-icon>
+        </div>
+      </nav>
+    </header>
+
+    <section
+      class="min-h-screen w-full flex justify-center items-center bg-white"
+      id="definition"
+    >
+      <div class="flex">
+        <div class="vertical-text">
+          <p class="text-gray-600 font-bold text-[60px]">Definition</p>
+        </div>
+
+        <div
+          class="z-[100] drop-shadow-xl relative flex-col w-[70vw] h-[70vh] bg-white rounded-[25px] border-gray-600 border-solid border-[8px] p-0"
+        >
+          <div
+            class="absolute top-[-20px] left-[-8px] w-[70vw] h-[55px] bg-white border-[8px] rounded-t-[25px] border-gray-600 flex justify-between items-center"
+          >
+            <div class="flex ml-[20px]">
+              <div class="rounded-full w-[13px] h-[13px] bg-red-500"></div>
+              <div
+                class="rounded-full w-[13px] h-[13px] bg-yellow-300 ml-[10px]"
+              ></div>
+              <div
+                class="rounded-full w-[13px] h-[13px] bg-green-500 ml-[10px]"
+              ></div>
+            </div>
+
+            <i
+              class="fa-solid fa-up-right-and-down-left-from-center mr-[20px] text-gray-600 text-[20px]"
+            ></i>
+          </div>
+
+          <div class="absolute w-[70ww] h-[63vh] top-[30px]">
+            <div
+              class="flex max-[1051px]:flex-col flex-row h-full overflow-x-auto p-[30px] items-center justify-between"
+            >
+              <div
+                class="flex-col justify-center max-h-[350px] w-[60%] max-[1051px]:w-[100%]"
+              >
+                <p class="text-black text-[20px]">
+                  <span class="font-bold text-[30px]">Vtubers</span>
+                  (ブイチューバー)
+                </p>
+                <p class="">
+                  A VTuber is an online entertainer who uses a virtual avatar
+                  generated using computer graphics. Real-time motion capture
+                  software or technology are often—but not always—used to
+                  capture movement. The digital trend originated in Japan in the
+                  mid-2010s, and has become an international online phenomenon
+                  in the 2020s.A majority of VTubers are English and
+                  Japanese-speaking YouTubers or live streamers who use avatar
+                  designs. By 2020, there were more than 10,000 active VTubers.
+                  Although the term is an allusion to the video platform
+                  YouTube, they also use websites such as Niconico, Twitch,
+                  Facebook, Twitter, and Bilibili.
+                </p>
+              </div>
+
+              <div
+                class="flex-col justify-center h-[70%] w-[30%] max-[695px]:hidden max-[1051px]:w-[70%] max-[1051px]:h-[100%] mt-0 max-[1051px]:mt-[20px] bg-[#F8F9FA] border-[2px] border-gray-600 p-[5px]"
+              >
+                <img src="./assets/gurastream.jpg" alt="" />
+                <p class="text-[13px] mt-[5px]">
+                  Screenshot of a VTuber stream, with viewers communicating live
+                  with the character. The character / performer shown is Gawr
+                  Gura of Hololive.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="min-h-screen bg-white flex items-center" id="timeline">
+      <div class="timeline">
+        <div class="info bg-gray-600">
+          <h1 class="text-[50px] font-bold text-white p-0">Timeline</h1>
+          <p>
+            A documented timeline of the significant events throughout vtuber
+            history.
+          </p>
+        </div>
+
+        <ol>
+          <li class="!w-[40px] !rounded-l-full">
+            <div>
+              <time>June 13 2011 </time>
+              UK-based Japanese vlogger
+              <span
+                class="font-bold text-gray-700 underline underline-offset-4 hover:text-blue-500"
+                ><a
+                  href="https://www.youtube.com/channel/UCdDpQ461uxNA3odAnpuigAg"
+                  >Ami Yamato</a
+                ></span
+              >
+              uploaded her first video, which featured an animated, virtual
+              avatar speaking to the camera.
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>7 July 2015</time>
+              The
+              <span
+                class="font-bold text-gray-700 underline underline-offset-4 hover:text-blue-500"
+                ><a href="https://store.steampowered.com/app/274920/FaceRig/"
+                  >FaceRig</a
+                ></span
+              >
+              indie software was released, becoming the first software suite
+              that enabled live avatars at home via face motion capture.
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>9 December 2015</time> The
+              <span
+                class="font-bold text-gray-700 underline underline-offset-4 hover:text-blue-500"
+                ><a href="https://www.live2d.com/en/business/interview/facerig/"
+                  >Live2D software module</a
+                ></span
+              >
+              in FaceRig enabling 2D avatars was added soon after in
+              collaboration with Live2D, Inc.
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>29 November 2016</time>
+              <span
+                class="font-bold text-gray-700 underline underline-offset-4 hover:text-blue-500"
+                ><a href="https://www.youtube.com/@AIChannel"
+                  >Kizuna AI</a
+                ></span
+              >, created by Activ8 was the first vtuber to acheieve breakout
+              popularity. She was the first to coin and use the term "virtual
+              YouTuber".
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>7 September 2017</time> Cover Corp debuted
+              <span
+                class="font-bold text-gray-700 underline underline-offset-4 hover:text-blue-500"
+                ><a
+                  href="https://www.youtube.com/channel/UCp6993wxpyDPHUpavwDFqgg"
+                  >Tokino Sora</a
+                ></span
+              >, the first VTuber using the company's avatar capture software.
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>February 2018</time> Anycolor Inc. founded the vtuber
+              agency,
+              <span
+                class="font-bold text-gray-700 underline underline-offset-4 hover:text-blue-500"
+                ><a href="https://www.nijisanji.jp/en">Nijisanji</a></span
+              >, which helped popularise the use of Live2D models instead of the
+              prior focus on 3D models.
+            </div>
+          </li>
+
+          <li>
+            <div>
+              <time>May - Sep 2018 </time> The first generation of
+              <span
+                class="font-bold text-gray-700 underline underline-offset-4 hover:text-blue-500"
+                ><a href="https://hololivepro.com/en/">Hololive</a></span
+              >
+              VTubers debuted from May to June 2018, and a second generation
+              followed in August and September.
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>2018 - 2020</time> Agencies like Hololive and Nijisanji
+              created branches in China, South Korea, Indonesia, and India, as
+              well as English-language branches targeting a global audience.
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>2020</time> The COVID-19 pandemic led to an overall increase
+              in viewer ship of video game live streaming in general in 2020,
+              which contributed to the growth of VTubers.
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>August 2020</time> Seven of the ten largest Super Chat
+              earners of all time on YouTube were VTubers, including Hololive
+              member
+              <span
+                class="font-bold text-gray-700 underline underline-offset-4 hover:text-blue-500"
+                ><a
+                  href="https://www.youtube.com/channel/UCS9uQI-jC3DE0L4IpXyvr6w"
+                  >Kiryu Coco</a
+                ></span
+              >
+              at number one.
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>2021 - present</time> The vtuber industry is still steadily
+              growing, with approximately 50,000 vtubers streaming actively as
+              of 2024.
+            </div>
+          </li>
+
+          <li class="!w-[270px] !rounded-r-full"></li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="process" class="flex-col w-full h-full py-7 bg-white">
+      <div class="flex-col">
+        <h1 class="text-center bg-white text-[50px] font-bold text-gray-600">
+          Process
+        </h1>
+      </div>
+      <div
+        class="min-h-[70vh] w-[100%] flex flex-col justify-center items-center bg-white min-[1363px]:flex-row"
+      >
+        <div
+          class="col1 p-4 h-[60vh] min-[1363px]:h-[80vh] w-[90vw] min-[1363px]:w-[45vw] bg-gray-600 rounded-lg m-2"
+        >
+          <div class="flex justify-center items-center w-[100%]">
+            <h1
+              class="text-center font-bold text-[40px] w-[230px] bg-gradient-to-r from-blue-300 to-pink-300 bg-cover text-transparent bg-clip-text py-[10px]"
+            >
+              Illustration
+            </h1>
+          </div>
+          <div
+            class="flex w-full mb-[30px] text-[8px] min-[300px]:text-[10px] min-[650px]:text-[15px]"
+          >
+            <h1 class="text-white font-bold">Tools used:&nbsp;&nbsp;</h1>
+            <img
+              src="./assets/csp.png"
+              alt=""
+              class="w-[12px] h-[12px] min-[650px]:w-[20px] min-[650px]:h-[20px]"
+            />
+            <h1 class="text-white">&nbsp;Clip Studio Paint,&nbsp;</h1>
+            <img
+              src="./assets/photoshop.png"
+              alt=""
+              class="w-[12px] h-[12px] min-[650px]:w-[20px] min-[650px]:h-[20px]"
+            />
+            <h1 class="text-white">&nbsp;Photoshop,&nbsp;</h1>
+            <img
+              src="./assets/krita.png"
+              alt=""
+              class="w-[12px] h-[12px] min-[650px]:w-[20px] min-[650px]:h-[20px]"
+            />
+            <h1 class="text-white">&nbsp;Krita,&nbsp;</h1>
+            <img
+              src="./assets/procreate.png"
+              alt=""
+              class="w-[12px] h-[12px] min-[650px]:w-[20px] min-[650px]:h-[20px]"
+            />
+            <h1 class="text-white">&nbsp;Procreate</h1>
+          </div>
+
+          <div class="flex mb-[20px] items-center text-center">
+            <img
+              src="./assets/art.gif"
+              alt=""
+              class="w-[0px] h-[0px] min-[515px]:w-[110px] min-[515px]:h-[110px] min-[650px]:w-[110px] min-[650px]:h-[110px] min-[1363px]:w-[180px] min-[1363px]:h-[180px] rounded-lg mr-[10px]"
+            />
+            <h1
+              class="text-white ml-[0px] min-[515px]:ml-[10px] text-[11px] min-[380px]:text-[13px] min-[515px]:text-[12px] min-[900px]:text-[17px] mx-[0px] min-[350px]:mx-[20px] min-[515px]:mx-[30px]"
+            >
+              All vtuber models are first sketched into life on the platforms
+              listed above. Color, shading, lineart and other details are then
+              added. Each part of the model drawing and seperated are labelled
+              before exporting into a rigging software.
+            </h1>
+          </div>
+
+          <div class="flex-row flex justify-between items-center text-center">
+            <h1
+              class="text-white ml-[0px] min-[515px]:ml-[10px] text-[11px] min-[380px]:text-[13px] min-[515px]:text-[12px] min-[900px]:text-[17px] mx-[0px] min-[350px]:mx-[30px]"
+            >
+              The reason for seperation is to ease the process of rigging the
+              movement of each individual part later down the line.
+            </h1>
+            <img
+              src="./assets/artseperated.jpg"
+              alt=""
+              class="w-[0px] h-[0px] min-[515px]:w-[300px] min-[515px]:h-[100px] min-[650px]:w-[300px] min-[650px]:h-[100px] min-[1363px]:w-[280px] min-[1363px]:h-[160px] rounded-lg ml-[10px]"
+            />
+          </div>
+        </div>
+        <div
+          class="col2 p-4 flex-col min-[515px]:flex-row min-[1363px]:flex-col h-[60vh] w-[90vw] min-[1363px]:h-[80vh] min-[1363px]:w-[45vw] bg-gray-600 rounded-lg m-2 flex justify-center items-center"
+        >
+          <div
+            class="row1 flex justify-center items-center flex-col w-[100%] h-[100%] min-[1363px]:h-[50%] rounded-lg mx-2 px-0 min-[1363px]:p-4 p-2"
+          >
+            <div class="flex justify-center items-center w-[100%]">
+              <h1
+                class="text-center font-bold text-[20px] min-[700px]:text-[40px] w-[200px] bg-gradient-to-r from-orange-300 to-red-300 bg-cover text-transparent bg-clip-text py-[10px]"
+              >
+                Rigging
+              </h1>
+            </div>
+            <div
+              class="flex w-full flex-wrap mb-[0] min-[400px]:mb-[30px] text-[10px] min-[800px]:text-[15px]"
+            >
+              <h1 class="text-white font-bold">Tools used:&nbsp;&nbsp;</h1>
+              <img
+                src="./assets/live2d.png"
+                alt=""
+                class="w-[12px] h-[12px] min-[650px]:w-[20px] min-[650px]:h-[20px]"
+              />
+              <h1 class="text-white">&nbsp;Live2D Cubism,&nbsp;</h1>
+              <img
+                src="./assets/inochi.png"
+                alt=""
+                class="w-[12px] h-[12px] min-[650px]:w-[20px] min-[650px]:h-[20px]"
+              />
+              <h1 class="text-white">&nbsp;Inochi2D&nbsp;</h1>
+            </div>
+
+            <div
+              class="flex flex-col min-[800px]:flex-row mb-[20px] items-center text-center"
+            >
+              <img
+                src="./assets/live2drig.gif"
+                alt=""
+                class="w-[0] h-[0] min-[515px]:w-[150px] min-[515px]:h-[90px] min-[1363px]:w-[190px] min-[1363px]:h-[110px] rounded-lg"
+              />
+              <h1
+                class="text-white mx-[10px] min-[520px]:mx-[30px] text-[12px] min-[900px]:text-[15px] min-[1100px]:text-[16px]"
+              >
+                Rigging is the process of animating a finished vtuber model to
+                give it movement, different poses and facial expressions.
+              </h1>
+            </div>
+          </div>
+
+          <div
+            class="row2 flex justify-center items-center flex-col min-[1363px]:px-4 px-0 min-[1363px]:p-0 p-2 w-[100%] h-[100%] min-[1363px]:h-[50%] rounded-lg m-0 min-[350px]:m-2"
+          >
+            <div class="flex justify-center items-center w-[100%]">
+              <h1
+                class="text-center font-bold text-[20px] min-[700px]:text-[40px] w-[290px] bg-gradient-to-r from-green-300 to-yellow-200 bg-cover text-transparent bg-clip-text py-[10px]"
+              >
+                Face Tracking
+              </h1>
+            </div>
+            <div
+              class="flex flex-wrap w-full mb-[0] min-[400px]:mb-[30px] text-[10px] min-[800px]:text-[15px]"
+            >
+              <h1 class="text-white font-bold">Tools used:&nbsp;&nbsp;</h1>
+              <img
+                src="./assets/vtubestudio.png"
+                alt=""
+                class="w-[15px] h-[12px] min-[650px]:w-[25px] min-[650px]:h-[20px]"
+              />
+              <h1 class="text-white">&nbsp;VTube Studio,&nbsp;</h1>
+              <img
+                src="./assets/prprlive.png"
+                alt=""
+                class="w-[12px] h-[12px] min-[650px]:w-[20px] min-[650px]:h-[20px]"
+              />
+              <h1 class="text-white">&nbsp;PrprLive,&nbsp;</h1>
+              <img
+                src="./assets/facerig.png"
+                alt=""
+                class="w-[40px] h-[12px] min-[650px]:w-[60px] min-[650px]:h-[20px]"
+              />
+              <h1 class="text-white">&nbsp;FaceRig&nbsp;</h1>
+            </div>
+
+            <div
+              class="flex flex-col-reverse min-[800px]:flex-row mb-[20px] items-center text-center"
+            >
+              <h1
+                class="text-white mx-[10px] min-[520px]:mx-[30px] text-[12px] min-[900px]:text-[15px] min-[1100px]:text-[16px]"
+              >
+                After illustration and rigging, everything is put through a face
+                tracking software so it can be used in real-time by vtubers.
+              </h1>
+              <img
+                src="./assets/FACETRACK.gif"
+                alt=""
+                class="w-[0] h-[0] min-[515px]:w-[190px] min-[515px]:h-[100px] min-[1363px]:w-[220px] min-[1363px]:h-[110px] rounded-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="flex" id="agencies">
+      <div class="wrapper bg-white">
+        <div class="container">
+          <input type="radio" name="slide" id="c1" checked />
+          <label for="c1" class="card">
+            <div class="row">
+              <div class="icon">1</div>
+              <div class="description">
+                <h4>hololive</h4>
+                <p>A new everyday, together</p>
+              </div>
+            </div>
+          </label>
+          <input type="radio" name="slide" id="c2" />
+          <label for="c2" class="card">
+            <div class="row">
+              <div class="icon">2</div>
+              <div class="description">
+                <h4>vshojo</h4>
+                <p>Empowering unique individuals</p>
+              </div>
+            </div>
+          </label>
+          <input type="radio" name="slide" id="c3" />
+          <label for="c3" class="card">
+            <div class="row">
+              <div class="icon">3</div>
+              <div class="description">
+                <h4>nijisanji</h4>
+                <p>Accelerating the next generation of entertainment</p>
+              </div>
+            </div>
+          </label>
+          <input type="radio" name="slide" id="c4" />
+          <label for="c4" class="card">
+            <div class="row">
+              <div class="icon">4</div>
+              <div class="description">
+                <h4>indie vtubers</h4>
+                <p>Strength in independence</p>
+              </div>
+            </div>
+          </label>
+        </div>
+        <div class="flex-col ml-[30px] mr-[30px]">
+          <h1 class="text-[50px] font-bold text-gray-600">Agencies</h1>
+          <p class="xl:text-[18px] text-[15px]">
+            Agencies are companies that have invested in Virtual YouTubers as a
+            form of entertainment. Within the vtubing industry, there exists the
+            "Big 3" of agencies, namely
+            <span class="text-cyan-300 font-bold drop-shadow-sm">Hololive</span
+            >,
+            <span class="text-pink-600 font-bold drop-shadow-sm">Vshojo</span>
+            &
+            <span class="text-teal-300 font-bold drop-shadow-sm">Nijisanji</span
+            >. These 3 agencies paved the way for vtubers and are currently
+            leading the development of the industry. <br /><br />
+            There also exists vtubers who operate independent of an agency,
+            called indies.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="carousel" id="suggestions">
+      <div
+        class="max-[430px]:hidden w-[45vw] h-[27vh] absolute pl-[20px] pr-[50px] bg-white z-[999] mb-9 left-0 bottom-0 rounded-r-full shadow-2xl flex-col flex items-start justify-center"
+      >
+        <h1 class="max-[622px]:text-[20px] text-[30px] font-bold text-gray-600">
+          Suggestions
+        </h1>
+        <h1
+          class="max-[622px]:text-[9px] max-[800px]:text-[12px] text-[14px] text-black"
+        >
+          Due to the large amount of vtubers in the scene, it's hard to pinpoint
+          who to simp for when starting out. Don't worry, we've listed out four
+          vtubers of different variety to ease anyone into the world of vtubers.
+        </h1>
+      </div>
+      <div class="absolute flex justify-center items-start w-full z-[1000]">
+        <h1
+          class="min-[430px]:hidden text-[40px] font-bold text-white bg-gray-600 mt-[30px] p-[10px] px-[20px] rounded-full"
+        >
+          Suggestions
+        </h1>
+      </div>
+      <!-- list item -->
+      <div class="list">
+        <div class="item">
+          <img src="./assets/nerissa1.jpg" />
+          <div class="content">
+            <div class="title">Nerissa Ravencroft</div>
+            <div class="author flex items-center">
+              Demon of Sound
+              <div class="socials flex ml-[10px]">
+                <a
+                  class="socialbutt w-[25px] h-[25px] ml-[5px] mr-[6px] hover:scale-125 text-white font-bold rounded-full bg-red-500 overflow-hidden flex justify-center items-center"
+                  href="https://www.youtube.com/@NerissaRavencroft"
+                  ><i class="fa-brands fa-youtube text-white tracking-[0px]"></i
+                ></a>
+
+                <a
+                  class="socialbutt w-[25px] h-[25px] ml-[5px] mr-[6px] hover:scale-125 text-white font-bold rounded-full bg-black overflow-hidden flex justify-center items-center"
+                  href="https://twitter.com/nerissa_en  "
+                  ><i
+                    class="fa-brands fa-x-twitter text-white tracking-[0px]"
+                  ></i
+                ></a>
+
+                <a
+                  class="socialbutt w-[25px] h-[25px] ml-[5px] mr-[6px] hover:scale-125 text-white font-bold rounded-full bg-cyan-300 overflow-hidden flex justify-center items-center"
+                  href="https://hololive.hololivepro.com/en/talents/nerissa-ravencroft/"
+                  ><i class="fa-solid fa-h text-white tracking-[0px]"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="des mt-[20px]">
+              <!-- lorem 50 -->
+              The Demon of Sound hailing from the third generation of Hololive
+              English, Advent. She has easy to understand humor, making her a
+              beginner friendly vtuber to get into. She is also known for having
+              spectacularly banger song covers.
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./assets/ironmouser.jpg" />
+          <div class="content">
+            <div class="title">Ironmouse</div>
+            <div class="author flex items-center">
+              Demon Queen
+              <div class="socials flex ml-[10px]">
+                <a
+                  class="socialbutt w-[25px] h-[25px] ml-[5px] mr-[6px] hover:scale-125 text-white font-bold rounded-full bg-purple-600 overflow-hidden flex justify-center items-center"
+                  href="https://www.twitch.tv/ironmouse"
+                  ><i class="fa-brands fa-twitch text-white tracking-[0px]"></i
+                ></a>
+
+                <a
+                  class="socialbutt w-[25px] h-[25px] ml-[5px] mr-[6px] hover:scale-125 text-white font-bold rounded-full bg-black overflow-hidden flex justify-center items-center"
+                  href="https://twitter.com/Ironmouse"
+                  ><i
+                    class="fa-brands fa-x-twitter text-white tracking-[0px]"
+                  ></i
+                ></a>
+
+                <a
+                  class="socialbutt w-[25px] h-[25px] ml-[5px] mr-[6px] hover:scale-125 text-white font-bold rounded-full bg-pink-500 overflow-hidden flex justify-center items-center"
+                  href="https://www.vshojo.com/talent/ironmouse"
+                  ><i class="fa-solid fa-v text-white tracking-[0px]"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="des mt-[20px]">
+              <!-- lorem 50 -->
+              Ironmouse, known as the undisputed queen of vtubers first started
+              out as an indie, but soon joined the VShojo agency. She is known
+              for her high pitched voice but also having one of the widest vocal
+              range. Ironmouse streams almost daily and is loved for her
+              humorous personality.
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./assets/shu2.jpg" />
+          <div class="content">
+            <div class="title">Shu Yamino</div>
+            <div class="author flex items-center">
+              Sorcerer of The Past
+              <div class="socials flex ml-[10px]">
+                <a
+                  class="socialbutt w-[25px] h-[25px] ml-[5px] mr-[6px] hover:scale-125 text-white font-bold rounded-full bg-red-500 overflow-hidden flex justify-center items-center"
+                  href="https://www.youtube.com/channel/UCG0rzBZV_QMP4MtWg6IjhEA"
+                  ><i class="fa-brands fa-youtube text-white tracking-[0px]"></i
+                ></a>
+
+                <a
+                  class="socialbutt w-[25px] h-[25px] ml-[5px] mr-[6px] hover:scale-125 text-white font-bold rounded-full bg-black overflow-hidden flex justify-center items-center"
+                  href="https://twitter.com/shu_yamino"
+                  ><i
+                    class="fa-brands fa-x-twitter text-white tracking-[0px]"
+                  ></i
+                ></a>
+
+                <a
+                  class="socialbutt w-[25px] h-[25px] ml-[5px] mr-[6px] hover:scale-125 text-white font-bold rounded-full bg-teal-500 overflow-hidden flex justify-center items-center"
+                  href="https://www.nijisanji.jp/en/talents/l/shu-yamino"
+                  ><i class="fa-solid fa-n text-white tracking-[0px]"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="des mt-[20px]">
+              <!-- lorem 50 -->
+              Shu is a vtuber affiliated with fourth wave of Nijisanji EN,
+              Luxiem. He is a good vtuber to get started in Nijisanji due to him
+              referencing his friends a lot on streams. He mainly streams FPS
+              shooter games.
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./assets/aia1.jpg" />
+          <div class="content">
+            <div class="title">Aia Amare</div>
+            <div class="author flex items-center">
+              Angelic Maiden
+              <div class="socials flex ml-[10px]">
+                <a
+                  class="socialbutt w-[25px] h-[25px] ml-[5px] mr-[6px] hover:scale-125 text-white font-bold rounded-full bg-red-500 overflow-hidden flex justify-center items-center"
+                  href="https://www.youtube.com/channel/UCN68LoM3khS4gdBMiWJO8WA"
+                  ><i class="fa-brands fa-youtube text-white tracking-[0px]"></i
+                ></a>
+
+                <a
+                  class="socialbutt w-[25px] h-[25px] ml-[5px] mr-[6px] hover:scale-125 text-white font-bold rounded-full bg-black overflow-hidden flex justify-center items-center"
+                  href="https://twitter.com/AiaAmare"
+                  ><i
+                    class="fa-brands fa-x-twitter text-white tracking-[0px]"
+                  ></i
+                ></a>
+
+                <a
+                  class="socialbutt w-[25px] h-[25px] ml-[5px] mr-[6px] hover:scale-125 text-white font-bold rounded-full bg-teal-500 overflow-hidden flex justify-center items-center"
+                  href="https://www.nijisanji.jp/en/talents/l/aia-amare"
+                  ><i class="fa-solid fa-n text-white tracking-[0px]"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="des mt-[20px]">
+              <!-- lorem 50 -->
+              The angelic Aia hails from Nijisanji EN's sixth wave, Iluna. An
+              overall variety streamer, she is suitable to watch for most
+              viewers. She is known for touching on a multitude of topics of
+              conversation during her streams, making her a good choice to put
+              in the background while you are doing something else.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- list thumnail -->
+      <div class="thumbnail">
+        <div class="item">
+          <img src="./assets/nerissa1.jpg" />
+          <div class="content">
+            <div class="title">Nerissa Ravencroft</div>
+            <div class="description">Demon of Sound</div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./assets/ironmouser.jpg" />
+          <div class="content">
+            <div class="title">Ironmouse</div>
+            <div class="description">Demon Queen</div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./assets/shu2.jpg" />
+          <div class="content">
+            <div class="title">Shu Yamino</div>
+            <div class="description">Sorcerer of The Past</div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./assets/aia1.jpg" />
+          <div class="content">
+            <div class="title">Aia Amare</div>
+            <div class="description">Angelic Maiden</div>
+          </div>
+        </div>
+      </div>
+      <!-- next prev -->
+
+      <div class="arrows">
+        <button id="prev"><</button>
+        <button id="next">></button>
+      </div>
+    </section>
+    <script src="./public/script.js"></script>
+  </body>
+</html>
